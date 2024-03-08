@@ -91,7 +91,7 @@ jobs:
     - name: CMake
       # disable BUILD_RESOURCES as this is already done when building the firmware
       run:  |
-        cmake -G Ninja -S InfiniSim -B build_lv_sim -DInfiniTime_DIR="${PWD}" -DBUILD_RESOURCES=OFF -DENABLE_USERAPPS="Apps:BlitzApp"
+        cmake -G Ninja -S InfiniSim -B build_lv_sim -DInfiniTime_DIR="${PWD}" -DBUILD_RESOURCES=OFF
 
     - name: Build simulator executable
       run:  |
