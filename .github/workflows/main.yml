@@ -112,7 +112,7 @@ jobs:
       run:  |
         mkdir -p build
         cd build
-        cmake -DARM_NONE_EABI_TOOLCHAIN_PATH=${{ runner.temp }}/arm-none-eabi -DNRF5_SDK_PATH=${{ runner.temp }}/nrf5_sdk -DUSE_OPENOCD=1 ../
+        cmake -DARM_NONE_EABI_TOOLCHAIN_PATH=${{ runner.temp }}/arm-none-eabi -DNRF5_SDK_PATH=${{ runner.temp }}/nrf5_sdk -DUSE_OPENOCD=1 -DENABLE_USERAPPS="Apps::BlitzApp" ../
       
     #########################################################################################
     # Make and Upload DFU Package
