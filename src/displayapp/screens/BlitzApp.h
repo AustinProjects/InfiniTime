@@ -18,8 +18,8 @@ namespace Pinetime {
     template <>
     struct AppTraits<Apps::BlitzApp> {
       static constexpr Apps app = Apps::BlitzApp;
-      static constexpr const char* icon = Screens::Symbol::BlitzApp;
-      static Screens::Screens* Create(AppController& controllers) {
+      static constexpr const char* icon = Screens::Symbol::bolt;
+      static Screens::Screen* Create(AppController& controllers) {
         return new Screens::BlitzApp();
       }
     };
