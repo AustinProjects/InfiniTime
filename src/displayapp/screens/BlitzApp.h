@@ -20,9 +20,9 @@ namespace Pinetime {
       static constexpr Apps app = Apps::BlitzApp;
       static constexpr const char* icon = Screens::Symbols::bolt;
 
-      static Screens::Screen* Create(AppController& controllers) {
+      static Screens::Screen* Create(AppControllers& controllers) {
         return new Screens::BlitzApp();
-      };
+      }
     };
   }
 }
